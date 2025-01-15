@@ -9,11 +9,11 @@ function App() {
 		useContext<streamingAvailability.Client>(StreamingClientContext);
 
 	return (
-		<>
+		<div>
 			<StreamingClientContext.Provider value={client}>
 				<Home />
 			</StreamingClientContext.Provider>
-		</>
+		</div>
 	);
 }
 
