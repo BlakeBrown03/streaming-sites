@@ -2,7 +2,11 @@
 export default {
 	content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
 	theme: {
+		container: {
+			center: true
+		},
 		extend: {}
 	},
-	plugins: []
+	plugins: [],
+	darkMode: "media"
 };
