@@ -1,12 +1,16 @@
+import StreamingClientContext from "../StreamingClientContext";
 import * as streamingAvailability from "streaming-availability";
-import dotenv
+import { useContext, useEffect } from "react";
 
 export default function Home(props: any) {
-	const API_KEY = process.env.API_KEY;
+	const client: streamingAvailability.Client =
+		useContext<streamingAvailability.Client>(StreamingClientContext);
 
 	return (
-		<div className="flex items-center justify-items-center">
-			<h1>Home</h1>
-		</div>
+		<StreamingClientContext.Provider value={client}>
+			<div className="flex items-center justify-items-center">
+				<h1>Home</h1>
+			</div>
+		</StreamingClientContext.Provider>
 	);
 }
