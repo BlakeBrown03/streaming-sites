@@ -1,16 +1,7 @@
-import StreamingClientContext from "../StreamingClientContext";
-import * as streamingAvailability from "streaming-availability";
-import { useContext, useEffect } from "react";
-
-export default function Home(props: any) {
-	const client: streamingAvailability.Client =
-		useContext<streamingAvailability.Client>(StreamingClientContext);
-
+export default function Home() {
 	return (
-		<StreamingClientContext.Provider value={client}>
-			<div className="flex items-center justify-items-center">
-				<h1>Home</h1>
-			</div>
-		</StreamingClientContext.Provider>
+		<div className="flex items-center justify-items dark:text-white dark:bg-slate-800">
+			<h1 className="text-8xl">Home</h1>
+		</div>
 	);
 }
