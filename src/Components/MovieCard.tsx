@@ -1,6 +1,6 @@
 export default function MovieCard(props: any) {
 	return (
-		<div className="">
+		<div className="mx-4 my-4">
 			<img
 				src={props.movie.imageSet.verticalPoster.w240}
 				alt={props.movie.title}

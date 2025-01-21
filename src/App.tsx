@@ -9,7 +9,7 @@ function App() {
 		useContext<streamingAvailability.Client>(StreamingClientContext);
 
 	return (
-		<div>
+		<div className="dark:bg-slate-800 dark:text-slate-200">
 			<StreamingClientContext.Provider value={client}>
 				<Home />
 			</StreamingClientContext.Provider>

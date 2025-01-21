@@ -15,7 +15,6 @@ export default function Home() {
 			service: "netflix",
 			showType: "movie"
 		});
-		console.log(show);
 		setMovies(show);
 	}
 
@@ -28,7 +27,7 @@ export default function Home() {
 			<div className="flex items-center justify-items justify-center dark:text-slate-200 dark:bg-slate-800">
 				<h1 className="text-8xl">Home</h1>
 			</div>
-			<div>
+			<div className="flex my-4 flex-grow justify-center">
 				{movies ? (
 					movies.map(movie => {
 						return <MovieCard key={movie.id} movie={movie} />;
