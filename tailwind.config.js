@@ -7,6 +7,6 @@ export default {
 		},
 		extend: {}
 	},
-	plugins: [],
+	plugins: [require("tailwind-scrollbar-hide")],
 	darkMode: "media"
 };
